@@ -51,5 +51,5 @@ jobs:
         with:
           app-name: "oneUi"
           slot-name: "Production"
-          package: "dist/angularIncludingAuth/browser"
+          package: dist/angularIncludingAuth/browser
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_684EE081C63E43EFB58CC32859366AD9 }}
