@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpInterceptorFn } from '@angular/common/http';
 
-import { msalHttpInterceptorInterceptor } from './msal-http-interceptor.interceptor';
+import { authInterceptor } from './msal-http-interceptor.interceptor';
 
-describe('msalHttpInterceptorInterceptor', () => {
-  const interceptor: HttpInterceptorFn = (req, next) => 
-    TestBed.runInInjectionContext(() => msalHttpInterceptorInterceptor(req, next));
+describe('authInterceptor', () => {
+  const interceptor: HttpInterceptorFn = (req, next) =>
+    TestBed.runInInjectionContext(() => authInterceptor(req, next));
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
